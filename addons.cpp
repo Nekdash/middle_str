@@ -1,5 +1,14 @@
 #include "middle_str.h"
 
+long long itc_len(string str){
+    long long res = 0;
+    int i = 0;
+    while (str[i] != '\0'){
+        i++;
+    }
+    return i;
+}
+
 string itc_slice_str(string str, int start, int endd){
     string res ="";
     if ( endd >= itc_len(str)){
