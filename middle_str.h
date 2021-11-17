@@ -19,4 +19,9 @@ bool itc_isIp(string str);
 string itc_DecToBin(string str);
 string itc_decToBase(int num, int base);
 
+
+string itc_slice_str(string str, int start, int endd);
+long long itc_len(string str);
+
+
 #endif // MIDDLE_STR_H_INCLUDED
