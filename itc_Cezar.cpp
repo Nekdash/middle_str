@@ -1,9 +1,9 @@
 #include "middle_str.h"
 
 string itc_Cezar(string str, int k){
-    int chi;
-    char ch;
-    string res;
+    int chi = 0;
+    char ch = '';
+    string res = "";
     for ( long long i = 0; str[i] != '\0'; i++){
         chi = str[i];
         if( chi > 65 && chi < 90){
@@ -23,7 +23,7 @@ string itc_Cezar(string str, int k){
                 ch = chi + k;
             }
         }else{
-            return "-1";
+            ch = chi;
         }
         res += ch;
     }
