@@ -10,7 +10,7 @@ string itc_decToBase(int num, int base){
         num *= (-1);
     }
     while(num > 0){
-        res += left[num % base];
+        res = left[num % base] + res;
         num = num / base;
     }
     return res;
