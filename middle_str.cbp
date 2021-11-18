@@ -32,7 +32,22 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="addons.cpp" />
+		<Unit filename="itc_Cezar.cpp" />
+		<Unit filename="itc_DecToBin.cpp" />
+		<Unit filename="itc_changeCase.cpp" />
+		<Unit filename="itc_countWords.cpp" />
+		<Unit filename="itc_decToBase.cpp" />
+		<Unit filename="itc_isDigit.cpp" />
+		<Unit filename="itc_isFirstInSecond.cpp" />
+		<Unit filename="itc_isIp.cpp" />
+		<Unit filename="itc_maxCharWord.cpp" />
+		<Unit filename="itc_rmFreeSpace.cpp" />
+		<Unit filename="itc_sameChar.cpp" />
+		<Unit filename="itc_toUpper.cpp" />
+		<Unit filename="itc_сompare.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="middle_str.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
