@@ -1,29 +1,35 @@
 #include "middle_str.h"
 
 string itc_maxCharWord(string str){
-    if ( itc_countWords(str) == 1)
-        return str;
-    string res ="";
-    string temp = "";
-    long long length = 0, ad = 0;
-    for ( long long i = 0; str[i] != '\0'; i++){
-        if ( str[i] != ' '){
-            length++;
-            temp += str[i];
-        }
-        if ( str[i] == ' '){
-            if ( length > itc_len(res)){
-                res = temp;
-            }
-            length = 0;
+    string max = "", temp = "";
+    long long len = 0, i = 0, start = 0;
+    if (itc_find_str(str, " ") == -1)
+        return "error";
+    while(str[i] != '\0'){
+        if (str[i] == 32){
+            if (str[i - 1] != 32)
+                temp = itc_slice_str(str, start, i - 1);
+                len = itc_len(temp);
+            if (temp[len - 1] < 65 || (temp[len - 1] > 90 && temp[len - 1] < 97) || temp[len - 1] > 122)
+                temp = itc_slice_str(temp, 0, len - 2);
+                len = itc_len(temp);
+            if (len > itc_len(max) && itc_isWord(temp) == 1)
+                max = temp;
+            start = i + 1;
+            len = 0;
             temp = "";
-        }
-        ad = i;
+            }
+        i++;
+
     }
-    if (length > itc_len(res)){
-        temp += str[ad - 1]; // last word check
-        res = temp;
+
+     temp = itc_slice_str(str, start, itc_len(str) - 1);
+     len = itc_len(temp);
+     if (len > itc_len(max) && itc_isWord(temp) == 1){
+         max = temp;
     }
-    return res;
-    return "-1";
+    if (max == " ")
+        return "error";
+    return max;
+    return "error";
 }
