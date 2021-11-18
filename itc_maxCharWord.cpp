@@ -5,22 +5,23 @@ string itc_maxCharWord(string str){
         return str;
     string res ="";
     string temp = "";
-    long long length = 0;
+    long long length = 0, ad = 0;
     for ( long long i = 0; str[i] != '\0'; i++){
         if ( str[i] != ' '){
             length++;
             temp += str[i];
         }
         if ( str[i] == ' '){
-            if ( lenght > itc_len(res)){
+            if ( length > itc_len(res)){
                 res = temp;
             }
-            lenght = 0;
+            length = 0;
             temp = "";
         }
+        ad = i;
     }
     if (length > itc_len(res)){
-        temp += str[i - 1] // last word check
+        temp += str[ad - 1]; // last word check
         res = temp;
     }
     return res;

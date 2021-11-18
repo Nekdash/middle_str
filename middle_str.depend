@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1637162650 source:c:\users\darya\documents\github\wasp\middle_str\addons.cpp
+	"middle_str.h"
+
+1637243200 c:\users\darya\documents\github\wasp\middle_str\middle_str.h
+	<iostream>
+	<string>
+
+1636886579 source:c:\users\darya\documents\github\wasp\middle_str\itc_changecase.cpp
+	"middle_str.h"
+
+1637243792 source:c:\users\darya\documents\github\wasp\middle_str\itc_countwords.cpp
+	"middle_str.h"
+
+1637210281 source:c:\users\darya\documents\github\wasp\middle_str\itc_dectobase.cpp
+	"middle_str.h"
+
+1636886574 source:c:\users\darya\documents\github\wasp\middle_str\itc_isdigit.cpp
+	"middle_str.h"
+
+1637242782 source:c:\users\darya\documents\github\wasp\middle_str\itc_isfirstinsecond.cpp
+	"middle_str.h"
+
+1637243132 source:c:\users\darya\documents\github\wasp\middle_str\itc_cezar.cpp
+	"middle_str.h"
+
+1637242782 source:c:\users\darya\documents\github\wasp\middle_str\itc_rmfreespace.cpp
+	"middle_str.h"
+
+1637159717 source:c:\users\darya\documents\github\wasp\middle_str\itc_samechar.cpp
+	"middle_str.h"
+
+1636886559 source:c:\users\darya\documents\github\wasp\middle_str\itc_toupper.cpp
+	"middle_str.h"
+
+1637243138 source:c:\users\darya\documents\github\wasp\middle_str\itc_ñompare.cpp
+	"middle_str.h"
+
+1637243471 source:c:\users\darya\documents\github\wasp\middle_str\main.cpp
+	<iostream>
+	"middle_str.h"
+
+1637243243 source:c:\users\darya\documents\github\wasp\middle_str\itc_dectobin.cpp
+	"middle_str.h"
+
+1637243253 source:c:\users\darya\documents\github\wasp\middle_str\itc_isip.cpp
+	"middle_str.h"
+
+1637243351 source:c:\users\darya\documents\github\wasp\middle_str\itc_maxcharword.cpp
+	"middle_str.h"
+

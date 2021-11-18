@@ -1,24 +1,29 @@
 #include "middle_str.h"
 
 bool itc_isIp(string str){
-    string temp = "";
-    bool check = false;
-    int ch = 0, num_counter = 0;
-    long long temp_num = 0;
+
+    long long counter = 0;
+    string res = "";
+
+    if(str[itc_len(str) - 1] == '.' || itc_len(str) > 15 )
+        return false;
     for (long long i = 0; str[i] != '\0'; i++){
-            temp ="";
-        if(str[i] == '.' && itc_isDigit(str[i + 1]) && itc_isDigit(str[i-1])){
-            num_counter++;
-            temp = itc_slice_str(str, 0, i -1);
-            temp_num = str_to_num(temp);
-            if ( temp_num <= 255){
-                check = true;
-            }
-            str = itc_slice_str(str, i + 1, itc_len(str));
+        if (str[i] == '.'){
+            if (str[i - 1] == '.')
+                return false;
+            if (itc_str_to_num(new_str) > 255)
+                return false;
+            res = "";
+            counter = 0;
         }
-        if ( !check || num_counter!= 4){
+        if(str[i] > '9' || str[i] < '0' && str[i] != '.')
             return false;
-        }
+        if(str[i] != '.'){
+            res += str[i];
+            counter++;}
+        if (counter > 3)
+            return false;
+        i++;
     }
     return true;
 
@@ -26,8 +31,8 @@ bool itc_isIp(string str){
 
 long long str_to_num(string temp){
     int ch = 0;
-    long long temp_num;
-    for ( int j = 0; temp[i] != '\0'; i++){
+    long long temp_num = 0;
+    for ( long long i = 0; temp[i] != '\0'; i++){
                 ch = temp[i] - 48;
                 temp_num = temp_num * 10 + ch;
     }

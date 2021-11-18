@@ -2,7 +2,7 @@
 
 string itc_Cezar(string str, int k){
     int chi = 0;
-    char ch = '';
+    char ch = ' ';
     string res = "";
     for ( long long i = 0; str[i] != '\0'; i++){
         chi = str[i];

@@ -8,7 +8,7 @@ using namespace std;
 bool itc_isDigit(unsigned char c);
 unsigned char itc_toUpper(unsigned char c);
 unsigned char itc_changeCase(unsigned char c);
-bool itc_ñompare(string s1, string s2);
+bool itc_compare(string s1, string s2);
 int itc_countWords(string str);
 string itc_maxCharWord(string str);
 char itc_sameChar(string str);
@@ -22,6 +22,6 @@ string itc_decToBase(int num, int base);
 
 string itc_slice_str(string str, int start, int endd);
 long long itc_len(string str);
-
+long long str_to_num(string temp);
 
 #endif // MIDDLE_STR_H_INCLUDED
